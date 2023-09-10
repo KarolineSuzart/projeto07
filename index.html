@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <title>DOM</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="menu">
+            <ul>
+            <li>Menu 01</li>
+            <li>Menu 02</li>
+            <li>Menu 03</li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main class="main"> 
+
+        <h1 class="dom"> DOM - Document Objet Model</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="+" onclick="somar()" id="botao">
+        <input type="button" value="-" onclick="subtrair()" id="botao">
+        <input type="button" value="*" onclick="multiplicar()" id="botao">
+        <input type="button" value="/" onclick="dividir()" id="botao">
+        <input type="button" value="Limpar" onclick="limpar()" id="botao">
+        <div id="res" class="result"> Resultado </div>
+    </main>
+
+     <footer>  Karoline Suzart- Elas na Tech ♥ </footer>
+
+    <script>    
+        // var btnSomar = window.document.getElementById('btnSomar');
+        // btnSomar.addEventListener('click',somar);
+
+        function somar(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+  
+            var resultado = window.document.getElementById('res');
+            var tn1 = parseFloat(n1.value);
+            var tn2 = parseFloat(n2.value);
+            var res = tn1 + tn2;
+            resultado.innerText = 'O valor da soma é: ' + res;
+        }
+
+        function subtrair(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+
+            var resultado = window.document.getElementById('res');
+            var tn1 = parseFloat(n1.value);
+            var tn2 = parseFloat(n2.value);
+
+            var res = tn1 - tn2;
+            resultado.innerText = 'O valor da subtração é: ' + res;
+        }
+
+        function multiplicar(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+
+            var resultado = window.document.getElementById('res');
+            var tn1 = parseFloat(n1.value);
+            var tn2 = parseFloat(n2.value);
+
+            var res = tn1 * tn2;
+            resultado.innerText = 'O valor da multiplicação é: ' + res;
+        }
+
+        function dividir(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+
+            var resultado = window.document.getElementById('res');
+            var tn1 = parseFloat(n1.value);
+            var tn2 = parseFloat(n2.value);
+
+            var res = tn1 / tn2;
+            resultado.innerText = 'O valor da divisão é: ' + res;
+        }
+
+        function limpar(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+            var resultado = window.document.getElementById('res');
+            n1.value = "";
+            n2.value = "";
+            resultado.innerText = "Resultado";
+        }
+    </script>
+   
+</body>
+</html>

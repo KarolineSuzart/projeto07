@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background-image: url(Imagem/math.jpg);
+    display: block;
+    background-repeat: repeat;
+    background-size: cover;
+}
+header,footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(54, 66, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);  
+    align-items: center;
+
+}
+.logo{
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+    gap: 20px;
+    font-size: 22px;
+}
+.main{
+    background-color: #c0c0ff;
+    margin: 210px; 
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    width: 600px;
+}
+#txtn1{
+    width: 60px;
+    padding: 10px;
+}
+#txtn2{
+    width: 60px;
+    padding: 10px;
+}
+#botao{
+    width: 60px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.dom{
+    color: rgb(16, 42, 238);
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.result{
+    color: rgb(10, 18, 241);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 10px;
+}
+footer{
+    font-size: 25px;
+    justify-content: center;
+    padding: 16px;
+    
+}
